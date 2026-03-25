@@ -21,15 +21,6 @@ To build a credit risk model that can be used by a Risk Unit to:
 
 ---
 
-## 📂 Dataset Description
-
-The dataset consists of loan data from Feb 2022 to May 2024:
-
-- **Training Data:** Feb 2022 – Feb 2024  
-- **Out-of-Time Test Data:** Mar 2024 – May 2024  
-
----
-
 ## 🧾 Features Used
 
 ### 👤 Customer Features
