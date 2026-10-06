@@ -115,21 +115,34 @@ st.markdown("""
 }
 
 /* ── Inputs ── */
-.stNumberInput > div > div > input,
-.stSelectbox > div > div {
-    background: rgba(255,255,255,0.07) !important;
+.stNumberInput input {
+    background: #f8fafc !important;
     border: 1px solid rgba(255,255,255,0.15) !important;
     border-radius: 10px !important;
-    color: white !important;
+    color: #111827 !important;
+    -webkit-text-fill-color: #111827 !important;
     font-family: 'Space Grotesk', sans-serif !important;
-    transition: border-color 0.2s, box-shadow 0.2s;
 }
-.stNumberInput > div > div > input:focus {
+
+.stSelectbox [data-baseweb="select"] {
+    background: #f8fafc !important;
+    border: 1px solid rgba(255,255,255,0.15) !important;
+    border-radius: 10px !important;
+}
+
+.stSelectbox [data-baseweb="select"] div,
+.stSelectbox [data-baseweb="select"] span {
+    color: #111827 !important;
+    -webkit-text-fill-color: #111827 !important;
+}
+
+.stNumberInput input:focus {
     border-color: #00d4ff !important;
     box-shadow: 0 0 0 3px rgba(0,212,255,0.15) !important;
     outline: none !important;
 }
-.stSelectbox > div > div:hover {
+
+.stSelectbox [data-baseweb="select"]:hover {
     border-color: #00d4ff !important;
 }
 
