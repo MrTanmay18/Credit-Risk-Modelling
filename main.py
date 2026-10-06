@@ -115,34 +115,38 @@ st.markdown("""
 }
 
 /* ── Inputs ── */
-.stNumberInput input {
-    background: #f8fafc !important;
-    border: 1px solid rgba(255,255,255,0.15) !important;
-    border-radius: 10px !important;
+
+/* Number input text */
+div[data-testid="stNumberInput"] input {
     color: #111827 !important;
     -webkit-text-fill-color: #111827 !important;
+    background-color: #f8fafc !important;
     font-family: 'Space Grotesk', sans-serif !important;
 }
 
-.stSelectbox [data-baseweb="select"] {
-    background: #f8fafc !important;
-    border: 1px solid rgba(255,255,255,0.15) !important;
-    border-radius: 10px !important;
-}
-
-.stSelectbox [data-baseweb="select"] div,
-.stSelectbox [data-baseweb="select"] span {
+/* Number input when focused */
+div[data-testid="stNumberInput"] input:focus {
     color: #111827 !important;
     -webkit-text-fill-color: #111827 !important;
-}
-
-.stNumberInput input:focus {
     border-color: #00d4ff !important;
     box-shadow: 0 0 0 3px rgba(0,212,255,0.15) !important;
     outline: none !important;
 }
 
-.stSelectbox [data-baseweb="select"]:hover {
+/* Selectbox container */
+div[data-testid="stSelectbox"] [data-baseweb="select"] {
+    background-color: #f8fafc !important;
+    border-radius: 10px !important;
+}
+
+/* Selectbox selected text */
+div[data-testid="stSelectbox"] [data-baseweb="select"] * {
+    color: #111827 !important;
+    -webkit-text-fill-color: #111827 !important;
+}
+
+/* Selectbox hover */
+div[data-testid="stSelectbox"] [data-baseweb="select"]:hover {
     border-color: #00d4ff !important;
 }
 
